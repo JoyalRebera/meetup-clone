@@ -1,16 +1,22 @@
+
+// wow.js
+new WOW().init();
+
+
+
 // swiper.js
 var swiper = new Swiper(".slider", {
     slidesPerView: 1,
     spaceBetween: 10,
-     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    
+
     breakpoints: {
         640: {
             slidesPerView: 3,
@@ -31,15 +37,15 @@ var swiper = new Swiper(".slider", {
 var swiper = new Swiper(".popular", {
     slidesPerView: 1,
     spaceBetween: 5,
-     autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    
+
     breakpoints: {
         640: {
             slidesPerView: 3,
