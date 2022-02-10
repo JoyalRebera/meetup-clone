@@ -1,6 +1,7 @@
 :root {
   --color-blue: #0063cc;
-  --color-orange: #f56258;
+  /* --color-orange: #f56258; */
+  --color-orange: #c3305d;
   --color-red: #f64060;
 
   --dark: #1a1a1a;
@@ -26,7 +27,6 @@ html {
   text-transform: capitalize;
   background-color: var(--dark);
   font-family: "Baloo Bhaijaan 2", cursive;
-
 }
 
 body {
@@ -51,12 +51,17 @@ h1 {
   font-weight: 700;
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 h1 {
   font-size: 4rem;
   margin-bottom: 4rem;
-  background-image: linear-gradient(36deg, var(--color-red), var(--color-blue));
+  background-image: linear-gradient(
+    36deg,
+    var(--color-red) 60%,
+    var(--color-blue)
+  );
   cursor: pointer;
 }
 
@@ -70,6 +75,7 @@ i {
 i:hover {
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   background-image: linear-gradient(
     -36deg,
@@ -85,15 +91,17 @@ p {
   margin-bottom: 1rem;
   color: var(--text-heading);
   transition: all 0.8s;
+  font-weight: 700;
 }
 p:hover {
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   background-image: linear-gradient(
-    -36deg,
-    var(--color-red) 40%,
-    var(--color-orange)
+    25deg,
+    var(--color-orange),
+    var(--color-blue) 80%
   );
 }
 
@@ -173,7 +181,6 @@ footer {
   background-clip: padding-box;
   border: solid 0.5rem transparent;
   border-radius: 1rem;
-  
 }
 
 .card-outline::after {
@@ -192,7 +199,6 @@ footer {
     var(--color-red) 65%
   );
 }
-
 
 .card-outline-testmonials {
   position: relative;
@@ -237,6 +243,7 @@ footer {
   letter-spacing: 0.2rem;
   display: inline-block;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   background-image: linear-gradient(
     60deg,
@@ -291,6 +298,7 @@ h1 {
   display: inline-block;
   background-image: linear-gradient(36deg, var(--color-red), var(--color-blue));
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   font-size: 4rem;
   margin-bottom: 2rem;
@@ -835,6 +843,12 @@ footer {
   .explore {
     flex-direction: column;
   }
+  .image-section {
+    margin-top: 4rem;
+  }
+  .card-story {
+    margin: 1rem 0;
+  }
 }
 
 @media (max-width: 578px) {
@@ -861,6 +875,9 @@ footer {
   }
   nav {
     padding: 2rem 1rem;
+  }
+  .heading {
+    align-items: flex-start;
   }
   .btn {
     padding: 0.5rem 1.5rem;
@@ -928,5 +945,8 @@ footer {
   }
   .social-media p {
     align-items: center;
+  }
+  .social-media .left {
+    margin-bottom: 1.5rem;
   }
 }
