@@ -25,7 +25,7 @@
 html {
   font-size: 62.5%;
   text-transform: capitalize;
-  background-color: var(--dark);
+  background: linear-gradient(180deg, #05070b 0, #17171d);
   font-family: "Baloo Bhaijaan 2", cursive;
 }
 
@@ -108,7 +108,7 @@ p:hover {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 3rem 2rem;
+  padding: 3rem 3%;
 }
 
 section,
@@ -265,17 +265,40 @@ footer {
   align-items: center;
 }
 .nav-items li {
+  position: relative;
+  display: inline-block;
   list-style: none;
-  padding: 0 2rem;
+  margin: 0 2rem;
   font-weight: 300;
   cursor: pointer;
 }
+
+.nav-items li::before {
+  content: "";
+  position: absolute;
+  left: auto;
+  bottom: -5px;
+  font-weight: 800;
+  background-image: linear-gradient(
+    140deg,
+    var(--color-orange),
+    var(--color-blue)
+  );
+  width: 0px;
+  height: 0px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.nav-items li:hover::before {
+  width: 100%;
+  height: 3px;
+  border-radius: 15px;
+}
 .nav-items a {
   font-size: 1.6rem;
-  color: var(--color-red);
   font-weight: 700;
   letter-spacing: 0.1rem;
   font-family: "Baloo Bhaijaan", sans-serif;
+  color: var(--color-orange);
 }
 .nav-items a:hover {
   color: var(--color-blue);
