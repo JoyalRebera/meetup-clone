@@ -899,7 +899,7 @@ footer {
   nav {
     padding: 2rem 1rem;
   }
-  
+
   .heading {
     align-items: flex-start;
   }
@@ -914,11 +914,11 @@ footer {
     padding: 0;
   }
   .nav-items li {
-     margin: .5rem;
+    margin: 0.5rem;
     padding: 0;
   }
   .nav-items a {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .celebrating-meetup {
     flex-direction: column;
